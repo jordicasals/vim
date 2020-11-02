@@ -30,3 +30,19 @@ imap <F4> <ESC><F4>I
 """ remove spaces/tab at end of line
 nmap <F5> :%s/[ \t]\+$//g<CR>
 imap <F5> <ESC><F6>A
+
+""" plugins
+call plug#begin('~/.vim/plugged')
+
+""" buffers
+nmap gn :bn<CR>
+nmap gp :bp<CR>
+nmap db :bd<CR>
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+call plug#end()
+
+let g:airline#extensions#tabline#enabled=1
+let g:airline_theme='wombat'
