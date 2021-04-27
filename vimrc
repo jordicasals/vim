@@ -47,3 +47,6 @@ call plug#end()
 
 let g:airline#extensions#tabline#enabled=1
 let g:airline_theme='wombat'
+
+let dart_html_in_string=v:true
+let g:dart_style_guide=2
