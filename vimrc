@@ -14,6 +14,8 @@ set smartindent
 set cindent
 set tabstop=4
 set shiftwidth=4
+set list
+set listchars=trail:█,tab:→\ ,extends:>,precedes:<
 
 " highlight extra white spaces
 hi ExtraWhitespace ctermbg=LightMagenta guibg=LightMagenta
@@ -43,10 +45,13 @@ nmap db :bd<CR>
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'dart-lang/dart-vim-plugin'
+Plug 'preservim/tagbar'
 
 call plug#end()
 
 let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tagbar#enabled=1
+let g:airline#extensions#tagbar#flags=''
 let g:airline_theme='wombat'
 
 let dart_html_in_string=v:true
